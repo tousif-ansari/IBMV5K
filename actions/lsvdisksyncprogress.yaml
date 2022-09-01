@@ -1,0 +1,29 @@
+---
+description: "Use the lsvdisksyncprogress command to display the progress of volume copy synchronization."
+enabled: true
+runner_type: "python-script"
+entry_point: "lsvdisksyncprogress.py"
+name: "lsvdisksyncprogress"
+parameters:
+  ip:
+    type: string
+    description: "IP address used when connecting to windows host"
+    required: false
+  username:
+    type: string
+    description: "username."
+    required: false
+  password:
+    type: string
+    description: "Optional override of the password in <credential_name>."
+    required: false
+    secret: true
+
+
+
+
+
+
+
+
+

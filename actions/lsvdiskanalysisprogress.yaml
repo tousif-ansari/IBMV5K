@@ -1,0 +1,28 @@
+---
+description: "Use the lsvdiskanalysisprogress command to display information about the space analysis progress for an entire clustered system (system)."
+enabled: true
+runner_type: "python-script"
+entry_point: "lsvdiskanalysisprogress.py"
+name: "lsvdiskanalysisprogress"
+parameters:
+  ip:
+    type: string
+    description: "IP address used when connecting to windows host"
+    required: false
+  username:
+    type: string
+    description: "username."
+    required: false
+  password:
+    type: string
+    description: "Optional override of the password in <credential_name>."
+    required: false
+    secret: true
+
+
+
+
+
+
+
+

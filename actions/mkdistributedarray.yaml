@@ -1,0 +1,46 @@
+---
+description: "Use the mkdistributedarray command to create a distributed array and add it to a storage pool. (Use the mkarray command to create nondistributed arrays.)"
+enabled: true
+runner_type: "python-script"
+entry_point: "mkdistributedarray.py"
+name: "lsarray"
+parameters:
+  ip:
+    type: string
+    description: "IP address used when connecting to windows host"
+    required: false
+  username:
+    type: string
+    description: "username."
+    required: false
+  password:
+    type: string
+    description: "Optional override of the password in <credential_name>."
+    required: false
+    secret: true
+  level:
+    type: string
+    description: "name of the array."
+    required: true
+  driveclass:
+    type: integer
+    description: "array members name"
+    required: true
+  drivecount:
+    type: integer
+    description: "array members name"
+    required: true
+  stripwidth:
+    type: integer
+    description: "array members name"
+    required: true
+  rebuildareas:
+    type: string
+    description: "array members name"
+    required: true
+
+
+
+
+
+

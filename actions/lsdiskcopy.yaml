@@ -1,0 +1,32 @@
+---
+description: "Use the lsdependentvdisks command to view which volumes go offline if you remove a specific piece of hardware from the systems."
+enabled: true
+runner_type: "python-script"
+entry_point: "lsdiskcopy.py"
+name: "lsdiskcopy"
+parameters:
+  ip:
+    type: string
+    description: "IP address used when connecting to windows host"
+    required: false
+  username:
+    type: string
+    description: "username."
+    required: false
+  password:
+    type: string
+    description: "Optional override of the password in <credential_name>."
+    required: false
+    secret: true
+  delim:
+    type: string
+    description: "name of the delim."
+    required: true
+
+
+
+
+
+
+
+

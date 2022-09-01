@@ -1,0 +1,31 @@
+---
+description: "Use the lshostvdiskmap command to display a list of volumes mapped to a given host. 
+These are the volumes that are recognized by the specified host."
+enabled: true
+runner_type: "python-script"
+entry_point: "lshostvdiskmap.py"
+name: "lshostvdiskmap"
+parameters:
+  ip:
+    type: string
+    description: "IP address used when connecting to windows host"
+    required: false
+  username:
+    type: string
+    description: "username."
+    required: false
+  password:
+    type: string
+    description: "Optional override of the password in <credential_name>."
+    required: false
+    secret: true
+  delim:
+    type: string
+    description: "name of the delim."
+    required: true
+
+
+
+
+
+

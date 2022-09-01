@@ -1,0 +1,32 @@
+---
+description: "Use the mkimagevolume command to create an image mode volume by importing (preserving) data on a managed disk from another storage system."
+enabled: true
+runner_type: "python-script"
+entry_point: " mkimagevolume.py"
+name: " mkimagevolume"
+parameters:
+  ip:
+    type: string
+    description: "IP address used when connecting to windows host"
+    required: false
+  username:
+    type: string
+    description: "username."
+    required: false
+  password:
+    type: string
+    description: "Optional override of the password in <credential_name>."
+    required: false
+    secret: true
+  mdisk:
+    type: integer
+    description: "put the mdisk"
+    required: true
+  pool:
+    type: integer
+    description: "put the pool"
+    required: true
+ 
+
+
+

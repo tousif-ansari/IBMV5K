@@ -1,0 +1,33 @@
+---
+description: "Use the mkvolume command to create an empty volume from existing storage pools. You can use this command for high availability configurations that include HyperSwap®, but it can also be used for volumes that are not high availability.
+"
+enabled: true
+runner_type: "python-script"
+entry_point: "mkvolume.py"
+name: "mkvolume"
+parameters:
+  ip:
+    type: string
+    description: "IP address used when connecting to windows host"
+    required: false
+  username:
+    type: string
+    description: "username."
+    required: false
+  password:
+    type: string
+    description: "Optional override of the password in <credential_name>."
+    required: false
+    secret: true
+  pool:
+    type: integer
+    description: "put the pool"
+    required: true
+  size:
+    type: integer
+    description: "put the size"
+    required: true
+ 
+
+
+

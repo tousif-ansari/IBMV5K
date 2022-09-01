@@ -1,0 +1,24 @@
+---
+description: "The lsrepairsevdiskcopyprogress command lists the repair progress for thin-provisioned volume copies or compressed volume copies."
+enabled: true
+runner_type: "python-script"
+entry_point: "lsrepairsevdiskcopyprogress.py"
+name: "lsrepairsevdiskcopyprogress"
+parameters:
+  ip:
+    type: string
+    description: "IP address used when connecting to windows host"
+    required: false
+  username:
+    type: string
+    description: "username."
+    required: false
+  password:
+    type: string
+    description: "Optional override of the password in <credential_name>."
+    required: false
+    secret: true
+  delim:
+    type: string
+    description: "name of the delim."
+    required: true

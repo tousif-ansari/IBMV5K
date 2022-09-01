@@ -1,0 +1,29 @@
+---
+description: "Use the analyzevdiskbysystem command to schedule all existing volumes in 
+system for free space analysis."
+enabled: true
+runner_type: "python-script"
+entry_point: "analyzevdiskbysystem.py"
+name: "analyzevdiskbysystem"
+parameters:
+  ip:
+    type: string
+    description: "IP address used when connecting to windows host"
+    required: false
+  username:
+    type: string
+    description: "username."
+    required: false
+  password:
+    type: string
+    description: "Optional override of the password in <credential_name>."
+    required: false
+    secret: true
+
+
+
+
+
+
+
+

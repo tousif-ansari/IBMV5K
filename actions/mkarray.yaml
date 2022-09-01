@@ -1,0 +1,35 @@
+---
+description: "Use the mkarray command to create an MDisk array and add it to a storage pool.This command applies to nondistributed arrays. (Use the mkdistributedarray command to create distributed arrays.)"
+enabled: true
+runner_type: "python-script"
+entry_point: "mkarray.py"
+name: "lsarray"
+parameters:
+  ip:
+    type: string
+    description: "IP address used when connecting to windows host"
+    required: false
+  username:
+    type: string
+    description: "username."
+    required: false
+  password:
+    type: string
+    description: "Optional override of the password in <credential_name>."
+    required: false
+    secret: true
+  members:
+    type: integer
+    description: "name of the member."
+    required: true
+  drive:
+    type: string
+    description: "name of the drive."
+    required: true
+
+
+
+
+
+
+

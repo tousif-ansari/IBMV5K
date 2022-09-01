@@ -1,0 +1,33 @@
+---
+description: "Use the lsvdiskextent command to list the MDisk extents provided for the specified volumes.
+"
+enabled: true
+runner_type: "python-script"
+entry_point: "lsvdiskextent.py"
+name: "lsvdiskextent"
+parameters:
+  ip:
+    type: string
+    description: "IP address used when connecting to windows host"
+    required: false
+  username:
+    type: string
+    description: "username."
+    required: false
+  password:
+    type: string
+    description: "Optional override of the password in <credential_name>."
+    required: false
+    secret: true
+  delim:
+    type: string
+    description: "put the delim"
+    required: true
+
+
+
+
+
+
+
+

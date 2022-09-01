@@ -1,0 +1,30 @@
+---
+description: "such as the disk name, I/O governing rate, or unit number. such as the disk name, I/O governing rate, or unit number. "
+enabled: true
+runner_type: "python-script"
+entry_point: "chvdisk.py"
+name: "chvdisk"
+parameters:
+  ip:
+    type: string
+    description: "IP address used when connecting to windows host"
+    required: false
+  username:
+    type: string
+    description: "username."
+    required: false
+  password:
+    type: string
+    description: "Optional override of the password in <credential_name>."
+    required: false
+    secret: true
+  rate:
+    type: integer
+    description: "name of the rate."
+    required: true
+
+
+
+
+
+

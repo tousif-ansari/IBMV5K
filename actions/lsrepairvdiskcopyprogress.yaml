@@ -1,0 +1,31 @@
+---
+description: "Use the lsrepairvdiskcopyprogress command to display the progress of volume repairs and validations"
+enabled: true
+runner_type: "python-script"
+entry_point: "lsrepairvdiskcopyprogress.py"
+name: "lsrepairvdiskcopyprogress"
+parameters:
+  ip:
+    type: string
+    description: "IP address used when connecting to windows host"
+    required: false
+  username:
+    type: string
+    description: "username."
+    required: false
+  password:
+    type: string
+    description: "Optional override of the password in <credential_name>."
+    required: false
+    secret: true
+  delim:
+    type: string
+    description: "name of the delim."
+    required: true
+
+
+
+
+
+
+

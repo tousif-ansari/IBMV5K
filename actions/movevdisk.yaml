@@ -1,0 +1,28 @@
+---
+description: "Use the movevdisk command to move the preferred node of a volume either within the same caching I/O group or to another caching I/O group."
+enabled: true
+runner_type: "python-script"
+entry_point: "movevdisk.py"
+name: "movevdisk"
+parameters:
+  ip:
+    type: string
+    description: "IP address used when connecting to windows host"
+    required: false
+  username:
+    type: string
+    description: "username."
+    required: false
+  password:
+    type: string
+    description: "Optional override of the password in <credential_name>."
+    required: false
+    secret: true
+  iogrp:
+    type: integer
+    description: "put the iogrp"
+    required: true
+
+
+
+

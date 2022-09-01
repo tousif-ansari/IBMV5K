@@ -1,0 +1,50 @@
+---
+description: "Use the mkvdisk command to create sequential, striped, or image mode volume objects. When they are mapped to a host object, these objects are seen as disk drives with which the host can run I/O operations. Note that the first syntax diagrams below is for striped or sequential volumes and the second syntax diagram is for image mode volumes. Use the mkvolume command for a simplified way of creating high availability volumes.This includes hyperswap topology. Use the mkimagevolume command for a simplified way of creating an image mode volume, importing existing data from a managed disk."
+enabled: true
+runner_type: "python-script"
+entry_point: "mkvdisk.py"
+name: "mkvdisk"
+parameters:
+  ip:
+    type: string
+    description: "IP address used when connecting to windows host"
+    required: false
+  username:
+    type: string
+    description: "username."
+    required: false
+  password:
+    type: string
+    description: "Optional override of the password in <credential_name>."
+    required: false
+    secret: true
+  mdiskgrp:
+    type: string
+    description: "put the mdiskgrpname"
+    required: true
+  size:
+    type: integer
+    description: "put the size"
+    required: true
+  iogrp:
+    type: integer
+    description: "put the iogrp"
+    required: true
+  vtype:
+    type: string
+    description: "put the vtype"
+    required: true
+  mdisk:
+    type: string
+    description: "put the mdisk"
+    required: true
+  node:
+    type: integer
+    description: "put the node"
+    required: true
+
+
+
+
+
+

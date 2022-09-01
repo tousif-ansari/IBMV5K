@@ -1,0 +1,31 @@
+---
+description: "Use the charraymember command to modify an array member's attributes, or to swap a member of a RAID array with that of another drive."
+enabled: true
+runner_type: "python-script"
+entry_point: "charraymember.py"
+name: "charraymember"
+parameters:
+  ip:
+    type: string
+    description: "IP address used when connecting to windows host"
+    required: false
+  username:
+    type: string
+    description: "username."
+    required: false
+  password:
+    type: string
+    description: "Optional override of the password in <credential_name>."
+    required: false
+    secret: true
+  memberName:
+    type: string
+    description: "name of the array."
+    required: true
+
+
+
+
+
+
+

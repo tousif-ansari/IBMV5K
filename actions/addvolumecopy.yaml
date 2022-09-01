@@ -1,0 +1,34 @@
+---
+description: "Use the addvolumecopy command to add a copy to an existing volume. 
+On a standard topology system, you can use this command to add a mirrored copy
+On a topology system,HyperSwap® you can use this command to convert an existing basic volume into a 
+highly available volume by adding a copy of that volume at a second site."
+enabled: true
+runner_type: "python-script"
+entry_point: "addvolumecopy.py"
+name: "addvolumecopy"
+parameters:
+  ip:
+    type: string
+    description: "IP address used when connecting to windows host"
+    required: false
+  username:
+    type: string
+    description: "username."
+    required: false
+  password:
+    type: string
+    description: "Optional override of the password in <credential_name>."
+    required: false
+    secret: true
+  poolName:
+    type: string
+    description: "name of the pool."
+    required: true
+
+
+
+
+
+
+

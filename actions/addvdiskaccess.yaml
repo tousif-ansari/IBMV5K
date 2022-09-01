@@ -1,0 +1,32 @@
+---
+description: "Use the addvdiskaccess to add an I/O group (or groups) 
+to the set of I/O groups in which a volume can be made accessible to hosts."
+enabled: true
+runner_type: "python-script"
+entry_point: "addvdiskaccess.py"
+name: "addvdiskaccess"
+parameters:
+  ip:
+    type: string
+    description: "IP address used when connecting to windows host"
+    required: false
+  username:
+    type: string
+    description: "username."
+    required: false
+  password:
+    type: string
+    description: "Optional override of the password in <credential_name>."
+    required: false
+    secret: true
+  iogrp:
+    type: string
+    description: "name of the grp."
+    required: true
+
+
+
+
+
+
+

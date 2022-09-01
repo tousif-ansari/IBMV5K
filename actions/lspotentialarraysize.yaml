@@ -1,0 +1,46 @@
+---
+description: "Use the lspotentialarraysize command to display the size of a potential array for a specified drive count, drive class, and RAID level in the specified MDisk group.
+"
+enabled: true
+runner_type: "python-script"
+entry_point: "lspotentialarraysize.py"
+name: "lsarray"
+parameters:
+  ip:
+    type: string
+    description: "IP address used when connecting to windows host"
+    required: false
+  username:
+    type: string
+    description: "username."
+    required: false
+  password:
+    type: string
+    description: "Optional override of the password in <credential_name>."
+    required: false
+    secret: true
+  driveClass:
+    type: integer
+    description: "name of the array."
+    required: true
+  driveCount:
+    type: integer
+    description: "array members name"
+    required: true
+  level:
+    type: string
+    description: "array members name"
+    required: true
+  stripWidth:
+    type: integer
+    description: "array members name"
+    required: true
+  rebuildareas:
+    type: string
+    description: "array members name"
+    required: true
+
+
+
+
+

@@ -1,0 +1,30 @@
+---
+description: "Use the lsarraysyncprogress command to display how synchronized a RAID array is."
+enabled: true
+runner_type: "python-script"
+entry_point: "lsarraysyncprogress.py"
+name: "lsarray"
+parameters:
+  ip:
+    type: string
+    description: "IP address used when connecting to windows host"
+    required: false
+  username:
+    type: string
+    description: "username."
+    required: false
+  password:
+    type: string
+    description: "Optional override of the password in <credential_name>."
+    required: false
+    secret: true
+  delimName:
+    type: string
+    description: "name of the array."
+    required: true
+
+
+
+
+
+

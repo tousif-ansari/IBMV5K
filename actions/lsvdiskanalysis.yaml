@@ -1,0 +1,28 @@
+---
+description: "Use the lsvdiskanalysis command to display information for thin provisioning and compression estimation analysis report for a single volume or multiple volumes."
+enabled: true
+runner_type: "python-script"
+entry_point: "lsvdiskanalysis.py"
+name: "lsvdiskanalysis"
+parameters:
+  ip:
+    type: string
+    description: "IP address used when connecting to windows host"
+    required: false
+  username:
+    type: string
+    description: "username."
+    required: false
+  password:
+    type: string
+    description: "Optional override of the password in <credential_name>."
+    required: false
+    secret: true
+
+
+
+
+
+
+
+

@@ -1,0 +1,32 @@
+---
+description: "Use the mkmetadatavdisk command to create one metadata volume (owner type is host_integration_metadata) from a storage pool. You can also export one block device or file system (that is based on this volume) in the configuration node."
+enabled: true
+runner_type: "python-script"
+entry_point: "mkmetadatavdisk.py"
+name: "mkmetadatavdisk"
+parameters:
+  ip:
+    type: string
+    description: "IP address used when connecting to windows host"
+    required: false
+  username:
+    type: string
+    description: "username."
+    required: false
+  password:
+    type: string
+    description: "Optional override of the password in <credential_name>."
+    required: false
+    secret: true
+  group:
+    type: string
+    description: "put the group"
+    required: true
+
+
+
+
+
+
+
+

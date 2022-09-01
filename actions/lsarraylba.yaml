@@ -1,0 +1,31 @@
+---
+description: "Use the lsarraylba command to permit an array logical block address (LBA) to be found from a drive and LBA."
+enabled: true
+runner_type: "python-script"
+entry_point: "lsarraylba.py"
+name: "lsarraylba"
+parameters:
+  ip:
+    type: string
+    description: "IP address used when connecting to windows host"
+    required: false
+  username:
+    type: string
+    description: "username."
+    required: false
+  password:
+    type: string
+    description: "Optional override of the password in <credential_name>."
+    required: false
+    secret: true
+  delimName:
+    type: string
+    description: "name of the array."
+    required: true
+
+
+
+
+
+
+

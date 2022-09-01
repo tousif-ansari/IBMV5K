@@ -1,0 +1,32 @@
+---
+description: "Use the lsvdiskfcmappings command to display a list of FlashCopy® mappings to which the volume belongs. A volume can be part of up to 256 FlashCopy mappings."
+enabled: true
+runner_type: "python-script"
+entry_point: "lsvdiskfcmappings.py"
+name: "lsvdiskfcmappings"
+parameters:
+  ip:
+    type: string
+    description: "IP address used when connecting to windows host"
+    required: false
+  username:
+    type: string
+    description: "username."
+    required: false
+  password:
+    type: string
+    description: "Optional override of the password in <credential_name>."
+    required: false
+    secret: true
+  delim:
+    type: string
+    description: "put the delim"
+    required: true
+
+
+
+
+
+
+
+
