@@ -1,0 +1,25 @@
+---
+description: "Use the rmmetadatavdisk command to detach a file system or remove a block device (that is based on the volume with owner type host_integration_metadata) in a configuration node."
+enabled: true
+runner_type: "python-script"
+entry_point: "rmmetadatavdisk.py"
+name: "rmmetadatavdisk"
+parameters:
+  ip:
+    type: string
+    description: "IP address used when connecting to windows host"
+    required: false
+  username:
+    type: string
+    description: "username."
+    required: false
+  password:
+    type: string
+    description: "Optional override of the password in <credential_name>."
+    required: false
+    secret: true
+
+
+
+
+

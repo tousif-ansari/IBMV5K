@@ -1,0 +1,28 @@
+---
+description: "Use the rmvdiskcopy command to remove a volume copy from a volume. This command cannot be used for high availability volumes"
+enabled: true
+runner_type: "python-script"
+entry_point: "rmvdiskcopy.py"
+name: "rmvdiskcopy"
+parameters:
+  ip:
+    type: string
+    description: "IP address used when connecting to windows host"
+    required: false
+  username:
+    type: string
+    description: "username."
+    required: false
+  password:
+    type: string
+    description: "Optional override of the password in <credential_name>."
+    required: false
+    secret: true
+  name:
+    type: string
+    description: "put the name"
+    required: true
+
+
+
+

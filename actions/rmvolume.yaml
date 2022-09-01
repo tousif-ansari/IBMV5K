@@ -1,0 +1,29 @@
+---
+description: "Use the rmvolume command to remove a volume. You can use this command for high availability configurations that include HyperSwap®."
+enabled: true
+runner_type: "python-script"
+entry_point: "rmvolume.py"
+name: "rmvolume"
+parameters:
+  ip:
+    type: string
+    description: "IP address used when connecting to windows host"
+    required: false
+  username:
+    type: string
+    description: "username."
+    required: false
+  password:
+    type: string
+    description: "Optional override of the password in <credential_name>."
+    required: false
+    secret: true
+  volume:
+    type: integer
+    description: "put the volumename"
+    required: true
+
+
+
+
+

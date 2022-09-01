@@ -1,0 +1,28 @@
+---
+description: "The repairsevdiskcopy command repairs the metadata on a thin-provisioned volume copy or a compressed volume copy."
+enabled: true
+runner_type: "python-script"
+entry_point: "repairsevdiskcopy.py"
+name: "repairsevdiskcopy"
+parameters:
+  ip:
+    type: string
+    description: "IP address used when connecting to windows host"
+    required: false
+  username:
+    type: string
+    description: "username."
+    required: false
+  password:
+    type: string
+    description: "Optional override of the password in <credential_name>."
+    required: false
+    secret: true
+  diskname:
+    type: string
+    description: "put the diskname"
+    required: true
+
+
+
+

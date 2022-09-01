@@ -1,0 +1,28 @@
+---
+description: "Use the rmvdiskaccess command to delete one or more I/O groups from the set of I/O groups in which a volume can be made accessible to hosts."
+enabled: true
+runner_type: "python-script"
+entry_point: "rmvdiskaccess.py"
+name: "rmvdiskaccess"
+parameters:
+  ip:
+    type: string
+    description: "IP address used when connecting to windows host"
+    required: false
+  username:
+    type: string
+    description: "username."
+    required: false
+  password:
+    type: string
+    description: "Optional override of the password in <credential_name>."
+    required: false
+    secret: true
+  groupname:
+    type: integer
+    description: "put the groupname"
+    required: true
+
+
+
+

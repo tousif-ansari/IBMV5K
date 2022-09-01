@@ -1,0 +1,28 @@
+---
+description: "Use the rmvdiskhostmap command to delete an existing host mapping the volume is no longer accessible for input/output (I/O) transactions on the given host."
+enabled: true
+runner_type: "python-script"
+entry_point: "rmvdiskhostmap.py"
+name: "rmvdiskhostmap"
+parameters:
+  ip:
+    type: string
+    description: "IP address used when connecting to windows host"
+    required: false
+  username:
+    type: string
+    description: "username."
+    required: false
+  password:
+    type: string
+    description: "Optional override of the password in <credential_name>."
+    required: false
+    secret: true
+  hostname:
+    type: integer
+    description: "put the hostname"
+    required: true
+
+
+
+

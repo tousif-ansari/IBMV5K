@@ -1,0 +1,28 @@
+---
+description: "Use the rmvdisk command to delete a volume. This command cannot be used for high availability volumes. Use the rmvolume command for high availability volumes."
+enabled: true
+runner_type: "python-script"
+entry_point: "rmvdisk.py"
+name: "rmvdisk"
+parameters:
+  ip:
+    type: string
+    description: "IP address used when connecting to windows host"
+    required: false
+  username:
+    type: string
+    description: "username."
+    required: false
+  password:
+    type: string
+    description: "Optional override of the password in <credential_name>."
+    required: false
+    secret: true
+  diskname:
+    type: string
+    description: "put the diskname"
+    required: true
+
+
+
+

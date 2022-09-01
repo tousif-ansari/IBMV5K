@@ -1,0 +1,28 @@
+---
+description: "Use the recovervdiskbyiogrp command to acknowledge data loss for all volumes in the specified I/O group with a fast_write_state of corrupt and brings the volumes back online."
+enabled: true
+runner_type: "python-script"
+entry_point: "recovervdiskbyiogrp.py"
+name: "recovervdiskbyiogrp"
+parameters:
+  ip:
+    type: string
+    description: "IP address used when connecting to windows host"
+    required: false
+  username:
+    type: string
+    description: "username."
+    required: false
+  password:
+    type: string
+    description: "Optional override of the password in <credential_name>."
+    required: false
+    secret: true
+  groupname:
+    type: string
+    description: "put the groupname"
+    required: true
+
+
+
+

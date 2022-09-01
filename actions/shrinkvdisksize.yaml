@@ -1,0 +1,32 @@
+---
+description: "Use the shrinkvdisksize command to reduce the size of a volume by the specified capacity."
+enabled: true
+runner_type: "python-script"
+entry_point: "shrinkvdisksize.py"
+name: "shrinkvdisksize"
+parameters:
+  ip:
+    type: string
+    description: "IP address used when connecting to windows host"
+    required: false
+  username:
+    type: string
+    description: "username."
+    required: false
+  password:
+    type: string
+    description: "Optional override of the password in <credential_name>."
+    required: false
+    secret: true
+  size:
+    type: integer
+    description: "put the size"
+    required: true
+  unit:
+    type: integer
+    description: "put the unit"
+    required: true
+
+
+
+

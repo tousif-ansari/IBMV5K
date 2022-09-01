@@ -1,0 +1,42 @@
+---
+description: "Use the splitvdiskcopy command to create a separate volume from a synchronized copy of a mirrored volume."
+enabled: true
+runner_type: "python-script"
+entry_point: "splitvdiskcopy.py"
+name: "splitvdiskcopy"
+parameters:
+  ip:
+    type: string
+    description: "IP address used when connecting to windows host"
+    required: false
+  username:
+    type: string
+    description: "username."
+    required: false
+  password:
+    type: string
+    description: "Optional override of the password in <credential_name>."
+    required: false
+    secret: true
+  copy:
+    type: integer
+    description: "put the copy"
+    required: true
+  iogrp:
+    type: integer
+    description: "put the group"
+    required: true
+  node:
+    type: integer
+    description: "put the node"
+    required: true
+  accessiogrp:
+    type: string
+    description: "put the accessiogrp"
+    required: true
+
+
+
+
+
+
